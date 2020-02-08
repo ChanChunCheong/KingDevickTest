@@ -16,7 +16,7 @@ export default class EndScene extends Phaser.Scene {
     }
 
     preload(){
-        this.load.image('backButton', '/assets/image/back_button.png'); 
+        this.load.image('backButton', '/assets/image/play_button.png'); 
     }
     create() { //creating the menu screen
         //create images (z order)
@@ -52,7 +52,7 @@ export default class EndScene extends Phaser.Scene {
             align: "center"
         },this);
 
-        let backButton = this.add.image(this.game.renderer.width / 2 - 50, this.game.renderer.height / 2 + 200, 'backButton').setDepth(1);
+        let backButton = this.add.image(this.game.renderer.width / 2 - 35, this.game.renderer.height / 2 + 200, 'backButton').setDepth(1);
 
         // //create sprites (if using pixel art, remove sharpen)
 

@@ -6,7 +6,7 @@ var config = {
     type:Phaser.AUTO,
     width:800,
     height:700,
-    scene: [EndScene, LoadScene, MenuScene, Level1, Level2, Level3, Level4] 
+    scene: [LoadScene, MenuScene, Level1, Level2, Level3, Level4, EndScene] 
 };
 
 var game = new Phaser.Game(config);

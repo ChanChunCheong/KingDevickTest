@@ -39,7 +39,10 @@ class Level2 extends Phaser.Scene {
         this.input.keyboard.on('keyup', function(e){
             answers.push(e.key);
             var Alen = answers.length;
-            if (answers[Alen - 1] != questions[Alen - 1]) {
+            if(e.key == "n"){
+                this.scene.start("Level3", {totalTime: this.totalTime + this.timeElapsed, timeA: this.timeA, timeB: this.timeElapsed});
+            }
+            else if (answers[Alen - 1] != questions[Alen - 1]) {
                 console.log("wrong");
                 answers = []; //restart
                 alert("Wrong! You have to restart!");
