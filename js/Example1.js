@@ -6,7 +6,7 @@ class Example1 extends Phaser.Scene {
     preload(){
         this.load.image('GFS', '/assets/GFS.jpg'); 
     }
-
+    
     create(){
         this.image = this.add.image(400,300, 'GFS');
 

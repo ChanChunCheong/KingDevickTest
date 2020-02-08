@@ -12,7 +12,7 @@ export default class MenuScene extends Phaser.Scene {
         //create images (z order)
         this.add.image(this.game.renderer.width / 2, this.game.renderer.height * 0.20, CST.IMAGE.LOGO).setDepth(1);
 
-        this.add.image(0, 0, CST.IMAGE.TITLE).setOrigin(0).setDepth(0);
+        this.add.image(0, 240, CST.IMAGE.TITLE).setOrigin(0).setDepth(0);
 
         let playButton = this.add.image(this.game.renderer.width / 2, this.game.renderer.height / 2, CST.IMAGE.PLAY).setDepth(1);
 
@@ -64,7 +64,7 @@ export default class MenuScene extends Phaser.Scene {
         })
 
         playButton.on("pointerup", () => {
-            this.scene.start("Example2");
+            this.scene.start("Level1");
         })
 
         optionsButton.setInteractive();
