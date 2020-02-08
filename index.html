@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src ="./js/phaser.js"></script>
     <script src ="./js/Example1.js"></script>
-    <script src ="./js/game.js"></script>
+    <script src ="./js/Example2.js"></script>
+    <script src ="./js/Example3.js"></script>
+    <script src ="./js/webcam.js"></script>
+    <script type="module" defer src ="./js/game.js"></script>
     <title>Document</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
 </head>
 <body>
-    
+    <p><button id="btnStart">START RECORDING</button><br/>
+        <button id="btnStop">STOP RECORDING</button></p>
+        
+        <!-- video hidden-->
+        <video autoplay hidden></video> 
+        
+        <!-- saved video-->
+        <video id="vid2" controls hidden></video>
 </body>
 </html>

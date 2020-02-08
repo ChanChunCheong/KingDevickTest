@@ -1,14 +1,11 @@
+import MenuScene from './MenuScene.js';
+import LoadScene from './LoadScene.js';
+
 var config = {
     type:Phaser.AUTO,
     width:800,
     height:600,
-    // physics: {
-    //     default: 'arcade',
-    //     arcade:{
-    //         gravity: {y_200}
-    //     }
-    // },
-    scene: [Example1]
+    scene: [LoadScene, MenuScene, Example1, Example2, Example3] 
 };
 
 var game = new Phaser.Game(config);
